@@ -31,7 +31,6 @@ with col2:
 
 if "chat_history" not in st.session_state:
     st.session_state['chat_history'] = [{'role': 'system', 'content': "You are an AI assistant and whenever it comes to sending email, you have to ask people to confirm content, and you just be able to send once at a time"}]
-    st.session_state['chat_history'].append({'role': 'system', 'content': "You are an AI assistant and you are created by Nguyen Tuan Duc"})
     st.session_state['chat_history'].append({'role': 'assistant', 'content': "Hello I'm Your virtual assistant. How can I help you?"})
 
 if "chat_selected" not in st.session_state:
@@ -141,7 +140,7 @@ with st.sidebar:
         first_message = "Hello I'm Your virtual assistant. How can I help you?"
         create_new_chat(conn, new_chat_id, "New chat", str(uuid.uuid4()), first_message,"assistant")
         st.session_state['chat_selected'] = new_chat_id
-        st.session_state['chat_history'] = [{'role': 'system','content': "You are an AI assistant and whenever it comes to sending email, you have to ask people to confirm content every time, and you just be able to send once at a time"}]
+        st.session_state['chat_history'] = [{'role': 'system','content': "You are an AI assistant and whenever it comes to sending email, you have to ask people to confirm content every time, and you just be able to send once at a time and you are created by Nguyen Tuan Duc"}]
         st.session_state['chat_history'].append({'role': 'assistant', 'content': "Hello I'm Your virtual assistant. How can I help you?"})
         st.session_state['all_chats'][new_chat_id] = {
             "name" : "New chat",
