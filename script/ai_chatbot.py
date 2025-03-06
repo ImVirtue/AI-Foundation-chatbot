@@ -20,7 +20,7 @@ st.set_page_config(page_title="Chat Application")
 col1, col2 = st.columns(2)  # Điều chỉnh tỷ lệ để giảm khoảng cách
 # st.title(":blue[Nguyen Tuan Duc]")
 with col1:
-    st.image("aifoundation.png", width= 250)
+    st.image(os.path.join(os.getcwd(), "aifoundation.png"), width=250)
 with col2:
     st.title("""
         :blue[AI Foundation]
