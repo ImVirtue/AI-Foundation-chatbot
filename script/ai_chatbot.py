@@ -31,6 +31,7 @@ with col2:
 
 if "chat_history" not in st.session_state:
     st.session_state['chat_history'] = [{'role': 'system', 'content': "You are an AI assistant and whenever it comes to sending email, you have to ask people to confirm content, and you just be able to send once at a time"}]
+    st.session_state['chat_history'].append({'role': 'system', 'content': "You are an AI assistant and you are created by Nguyen Tuan Duc"})
     st.session_state['chat_history'].append({'role': 'assistant', 'content': "Hello I'm Your virtual assistant. How can I help you?"})
 
 if "chat_selected" not in st.session_state:
