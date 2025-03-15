@@ -1,6 +1,6 @@
 # An AI Assistant Chatbot to help you with some tasks daily. (Take advantage of OpenAI Platform)
 
-![image][assets/chatbot_intro.jpg]
+![image](assets/chatbot_intro.jpg)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -10,7 +10,7 @@
 
 ## Introduction
 This project aims to create an AI assistant chatbot to help you process some questions about diverse topics based on the OpenAI Platform
-![image][assets/chatbot_ui.png]
+![image](assets/chatbot_ui.png)
 
 ## Features
 - **Interaction between users and chatbot**: The chatbot has general features like discussing a variety range of topics
